@@ -3,33 +3,36 @@ Released June 18, 2014
 by Andrew Hazelden
 
 ## Overview ##
+![This is a snapshot of a sample MultiMesh Scripting Conversion.](multimesh-process.png)
+
+The MultiMesh Scripting tool simplifies the process of using meshlabserver on Windows. The scripts provide an easy way to batch covert mesh formats, and creates a standardized method for applying a MeshLab MLX filter script to a folder of laser scan or photogrammetry reconstructed geometry files.
 
 ![MultiMeshScripting Screenshot](script_screenshot.png)
 
-MultiMesh Scripting is a set of two Windows BAT scripts that help simply the process of running meshlabserver MLX scripts and batch processing a folder of 3D scene files.
-
 ## Download ##
 
-The MultiMesh Scripting .BAT scripts are open source programs that are available as a free download. You can download the latest version of this script from Andrew Hazelden's Blog: [http://www.andrewhazelden.com](http://www.andrewhazelden.com) 
+The MultiMesh Scripting .BAT scripts are open source programs that are available as a free download.
 
-This script uses meshlabserver to drive the conversions. To get a copy of meshlabserver you need to download the latest copy of MeshLab (which is for free) from VCG:  
+This script uses meshlabserver to drive the conversions. To get a copy of meshlabserver you need to download the latest copy of MeshLab (which is free) from VCG:  
 [http://meshlab.sourceforge.net/](http://meshlab.sourceforge.net/ "http://meshlab.sourceforge.net/")
 
 
 ## Installation ##
 
-For the software to work it has to be expanded and moved to the folder:  
+For the MultiMesh Scripting software to work it has to be expanded and moved to the folder:  
 > C:\multiMeshScripting
 
 
-The MultiMesh Scripting scripts expect meshlab & meshlabserver to be located at:
+The MultiMesh Scripting scripts expect MeshLab & meshlabserver to be located at:
 > C:\Program Files\VCG\MeshLab\meshlabserver.exe
 
-You can edit the two .bat scripts if you installed meshlab to another location on your hard disk.
+You can edit the two MultiMeshScripting .bat scripts if you installed meshlab to another location on your hard disk.
 
 * * *
 
 ## Batch Script Notes ##
+
+![MultiMesh Scripting Folder](project_folder.png)
 
 I created the following .bat scripts to show what is possible:
 
