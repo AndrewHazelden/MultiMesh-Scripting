@@ -6,7 +6,7 @@
 <style type="text/css">
 /* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
 /* Author: Nicolas Hery - http://nicolashery.com */
-/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
 /* Source: https://github.com/nicolahery/markdownpad-github */
 
 /* RESET
@@ -212,6 +212,24 @@ pre code, pre tt {
   border: none;
 }
 
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
 /* QUOTES
 =============================================================================*/
 
@@ -273,13 +291,18 @@ img {
 </style>
 </head>
 <body>
-<h1>MultiMesh Scripting v1.0</h1>
-<p>Released June 18, 2014<br />
-by Andrew Hazelden</p>
+<h1>MultiMesh Scripting v1.1</h1>
+<p>Released 2017-02-14<br />
+by Andrew Hazelden  </p>
 <h2>Overview</h2>
 <p><img src="multimesh-process.png" alt="This is a snapshot of a sample MultiMesh Scripting Conversion." /></p>
 <p>The MultiMesh Scripting tool simplifies the process of using meshlabserver on Windows. The scripts provide an easy way to batch covert mesh formats, and creates a standardized method for applying a MeshLab MLX filter script to a folder of laser scan or photogrammetry reconstructed geometry files.</p>
 <p><img src="script_screenshot.png" alt="MultiMeshScripting Screenshot" /></p>
+<h2>Version History</h2>
+<h3>v1.1 - 2017-02-14</h3>
+<p>The new MeshLab version 2016.12 release has changed the flag that is used to define the output mesh options from the previous <strong>-om</strong> command line flag to the new and slightly different <strong>-o -m</strong> mode. The MultiMesh Scripting .bat scripts have been  updated and revised to accommodate for those differences in command line syntax.</p>
+<h3>v1.0 - 2014-06-18</h3>
+<p>The initial version of the MultiMesh Scripting tools was  publicly released.</p>
 <h2>Download</h2>
 <p>The MultiMesh Scripting .BAT scripts are open source programs that are available as a free download.</p>
 <p>This script uses meshlabserver to drive the conversions. To get a copy of meshlabserver you need to download the latest copy of MeshLab (which is free) from VCG:<br />
