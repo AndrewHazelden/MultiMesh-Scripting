@@ -1,6 +1,6 @@
-# MultiMesh Scripting v1.0 #
-Released June 18, 2014  
-by Andrew Hazelden
+# MultiMesh Scripting v1.1 #
+Released 2017-02-14  
+by Andrew Hazelden  
 
 ## Overview ##
 ![This is a snapshot of a sample MultiMesh Scripting Conversion.](multimesh-process.png)
@@ -8,6 +8,16 @@ by Andrew Hazelden
 The MultiMesh Scripting tool simplifies the process of using meshlabserver on Windows. The scripts provide an easy way to batch covert mesh formats, and creates a standardized method for applying a MeshLab MLX filter script to a folder of laser scan or photogrammetry reconstructed geometry files.
 
 ![MultiMeshScripting Screenshot](script_screenshot.png)
+
+## Version History ##
+
+### v1.1 - 2017-02-14 ###
+
+The new MeshLab version 2016.12 release has changed the flag that is used to define the output mesh options from the previous **-om** command line flag to the new and slightly different **-o -m** mode. The MultiMesh Scripting .bat scripts have been  updated and revised to accommodate for those differences in command line syntax.
+
+### v1.0 - 2014-06-18 ###
+
+The initial version of the MultiMesh Scripting tools was  publicly released.
 
 ## Download ##
 

@@ -3,8 +3,8 @@
 cls
 
 echo.
-echo MultiMesh Scripting - Run a MLX Script on a Folder v1.0
-echo June 18, 2014 - 2.54pm
+echo MultiMesh Scripting - Run a MLX Script on a Folder v1.1
+echo 2017-02-14 9.37 PM
 echo Script by Andrew Hazelden
 echo ----------------------------------------------------------------
 echo This bat script will process a series of meshes from the 
@@ -43,10 +43,16 @@ rem the MLX scripts are stored in the C:\multiMeshScripting\scripts folder
 @set mlxScriptFile=simple_script.mlx
 @set mlxScriptFolder=scripts
 
-rem OM Output Mesh Options
+rem Output Mesh Options
 rem These options specify what data types are exported by meshlabserver
-@set outputMeshOptions=-om vc fq wn
-rem The standard om options are "-om vc fq wn" which give vertex colors, face colors, and wedge normals
+
+rem MeshLab 2016.12 changed the syntax to:
+@set outputMeshOptions=-m vc fq wn
+
+rem Older MeshLab command syntax:
+rem @set outputMeshOptions=-om vc fq wn
+
+rem The standard om options are "-m vc fq wn" which give vertex colors, face colors, and wedge normals
 
 rem The available OM options are:
 rem vc -> vertex colors
@@ -116,7 +122,7 @@ rem ------------------------------------------------------
 rem Example Syntax: 
 rem "C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i input\boulder-mini1.ply -o output\boulder-mini1.ply -s scripts\simple_script.mlx -om vc fq wn
 
-rem %meshlabserverPath% -i %inputFolder%\%singleMeshNamePrefix%.%inputMeshFormat% -o %outputFolder%\%singleMeshNamePrefix%.%outputMeshFormat% -s %mlxScriptFolder%\%mlxScriptFile% %outputMeshOptions%
+rem %meshlabserverPath% -i %inputFolder%\%singleMeshNamePrefix%.%inputMeshFormat% -o %outputFolder%\%singleMeshNamePrefix%.%outputMeshFormat% %outputMeshOptions% -s %mlxScriptFolder%\%mlxScriptFile%
 
 rem ------------------------------------------------------
 rem   Run a meshlabserver MLX script on a folder
@@ -126,12 +132,12 @@ echo ----------------------------------------------------------------
 echo.
 
 rem Example syntax that is used inside the for loop: 
-rem "C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i input\boulder-mini1.ply -o output\boulder-mini1.ply -s scripts\simple_script.mlx -om vc fq wn
+rem "C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i input\boulder-mini1.ply -o output\boulder-mini1.ply  -m vc fq wn -s scripts\simple_script.mlx
 
 rem Run the "for" loop from inside the input folder
 cd %inputFolder%
 
-for %%I in (*.%inputMeshFormat%) do (%meshlabserverPath% -i %%I -o ..\%outputFolder%\%%~nI.%outputMeshFormat% -s ..\%mlxScriptFolder%\%mlxScriptFile% %outputMeshOptions%)
+for %%I in (*.%inputMeshFormat%) do (%meshlabserverPath% -i %%I -o ..\%outputFolder%\%%~nI.%outputMeshFormat% %outputMeshOptions% -s ..\%mlxScriptFolder%\%mlxScriptFile% )
 rem To get help on the "for" syntax use: for /?
 
 rem Go back down a directory
