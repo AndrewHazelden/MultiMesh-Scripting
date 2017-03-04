@@ -13,7 +13,7 @@ The MultiMesh Scripting tool simplifies the process of using meshlabserver on Wi
 
 ### v1.1 - 2017-02-14 ###
 
-The new MeshLab version 2016.12 release has changed the flag that is used to define the output mesh options from the previous **-om** command line flag to the new and slightly different **-o -m** mode. The MultiMesh Scripting .bat scripts have been  updated and revised to accommodate for those differences in command line syntax.
+The new MeshLab version 2016.12 release has changed the flag that is used to define the output mesh options from the previous **-om** command line flag to the new and slightly different **-o -m** mode. The MultiMesh Scripting .bat scripts have been updated and revised to accommodate for those differences in command line syntax.
 
 ### v1.0 - 2014-06-18 ###
 
