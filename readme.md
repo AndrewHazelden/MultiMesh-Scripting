@@ -1,6 +1,6 @@
-# MultiMesh Scripting v1.0 #
-Released June 18, 2014  
-by Andrew Hazelden
+# MultiMesh Scripting v1.1 #
+Released 2017-02-14  
+by Andrew Hazelden  
 
 ## Overview ##
 ![This is a snapshot of a sample MultiMesh Scripting Conversion.](multimesh-process.png)
