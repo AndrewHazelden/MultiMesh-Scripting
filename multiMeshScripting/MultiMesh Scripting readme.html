@@ -293,14 +293,15 @@ img {
 <body>
 <h1>MultiMesh Scripting v1.1</h1>
 <p>Released 2017-02-14<br />
-by Andrew Hazelden  </p>
+by Andrew Hazelden  
+</p>
 <h2>Overview</h2>
 <p><img src="multimesh-process.png" alt="This is a snapshot of a sample MultiMesh Scripting Conversion." /></p>
 <p>The MultiMesh Scripting tool simplifies the process of using meshlabserver on Windows. The scripts provide an easy way to batch covert mesh formats, and creates a standardized method for applying a MeshLab MLX filter script to a folder of laser scan or photogrammetry reconstructed geometry files.</p>
 <p><img src="script_screenshot.png" alt="MultiMeshScripting Screenshot" /></p>
 <h2>Version History</h2>
 <h3>v1.1 - 2017-02-14</h3>
-<p>The new MeshLab version 2016.12 release has changed the flag that is used to define the output mesh options from the previous <strong>-om</strong> command line flag to the new and slightly different <strong>-o -m</strong> mode. The MultiMesh Scripting .bat scripts have been  updated and revised to accommodate for those differences in command line syntax.</p>
+<p>The new MeshLab version 2016.12 release has changed the flag that is used to define the output mesh options from the previous <strong>-om</strong> command line flag to the new and slightly different <strong>-o -m</strong> mode. The MultiMesh Scripting .bat scripts have been updated and revised to accommodate for those differences in command line syntax.</p>
 <h3>v1.0 - 2014-06-18</h3>
 <p>The initial version of the MultiMesh Scripting tools was  publicly released.</p>
 <h2>Download</h2>
@@ -308,7 +309,8 @@ by Andrew Hazelden  </p>
 <p>This script uses meshlabserver to drive the conversions. To get a copy of meshlabserver you need to download the latest copy of MeshLab (which is free) from VCG:<br />
 <a href="http://meshlab.sourceforge.net/" title="http://meshlab.sourceforge.net/">http://meshlab.sourceforge.net/</a></p>
 <h2>Installation</h2>
-<p>For the MultiMesh Scripting software to work it has to be expanded and moved to the folder:  </p>
+<p>For the MultiMesh Scripting software to work it has to be expanded and moved to the folder:  
+</p>
 <blockquote>
 <p>C:\multiMeshScripting</p>
 </blockquote>
@@ -327,7 +329,8 @@ Processes the mesh files in the input folder using meshlabserver and a user defi
 Converts the meshes in the input folder using a meshlabserver with a user defined output format.</p>
 <h3>Changing Input &amp; Output File Names</h3>
 <p>To change the name of the input and output files you can edit the .bat scripts using a plain text editor.</p>
-<p>Input Mesh File variables  </p>
+<p>Input Mesh File variables  
+</p>
 <blockquote>
 <p>@set inputFolder=input<br />
 rem Note: You can choose a specific mesh format for input or<br />
@@ -337,7 +340,8 @@ rem @set inputMeshFormat=obj<br />
 rem @set inputMeshFormat=*  
 </p>
 </blockquote>
-<p>Output Mesh File variables  </p>
+<p>Output Mesh File variables  
+</p>
 <blockquote>
 <p>@set outputFolder=output<br />
 @set outputMeshFormat=obj<br />
@@ -346,7 +350,8 @@ rem Note: If you use the PLY output format it is saved as a BINARY PLY file<br /
 rem @set outputMeshFormat=u3d  
 </p>
 </blockquote>
-<p>MLX script file variables  </p>
+<p>MLX script file variables  
+</p>
 <blockquote>
 <p>rem the MLX scripts are stored in the C:\multiMeshScripting\scripts folder<br />
 @set mlxScriptFile=simple_script.mlx<br />
