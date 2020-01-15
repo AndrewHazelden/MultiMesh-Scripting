@@ -78,7 +78,4 @@ MLX script file variables
 
 eMail: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)   
 Blog: [http://www.andrewhazelden.com](http://www.andrewhazelden.com)  
-Twitter: [@andrewhazelden](https://twitter.com/andrewhazelden)  
-Google+: [https://plus.google.com/u/0/105694670378845894137](https://plus.google.com/u/0/105694670378845894137)
-
 
